@@ -22,100 +22,122 @@
     </header>
     <main>
       <h1>Магазин готовых шаблонов</h1>
-      <section>
-        <h2>Выбор шаблона</h2>
+      <div>
         <form action="" method="post">
           <fieldset>
             <legend>Стоимость:</legend>
-            <p>
-              <label><input type="range" min="0" max="15000" value="12" class="slider" id="lower"></label>
-              <label><input type="range" min="0" max="15000" value="2175" class="slider" id="higher"></label>
-            </p>
-            <br>
-            <p>
+            <div>
+              <!--Здесь будет двойной слайдер-->
+            </div>
+            <div>
               <label>От<input type="text" value="0"></label>
               <label>До <input type="text" value="15000"></label>
-            </p>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
-            <label><input type="radio" value="" name="" checked id="grid-selected">
+            <label><input type="radio" value="" name="" checked>
               <span>Адаптивная</span>
             </label>
-            <label><input type="radio" value="" name="" id="grid-selected">
+            <label><input type="radio" value="" name="">
               <span>Фиксированная</span>
             </label>
-            <label><input type="radio" value="" name="" id="grid-selected">
+            <label><input type="radio" value="" name="">
               <span>Резиновая</span>
             </label>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <label><input type="checkbox" checked id="features-selected">Слайдер</label>
-            <label><input type="checkbox" id="features-selected">Блок преимуществ</label>
-            <label><input type="checkbox" checked id="features-selected">Новости</label>
-            <label><input type="checkbox" id="features-selected">Галерея</label>
-            <label><input type="checkbox" id="features-selected">Корзина</label>
+            <label><input type="checkbox" checked><span>Слайдер</span></label>
+            <label><input type="checkbox"><span>Блок преимуществ</span></label>
+            <label><input type="checkbox" checked><span>Новости</span></label>
+            <label><input type="checkbox"><span>Галерея</span></label>
+            <label><input type="checkbox"><span>Корзина</span></label>
           </fieldset>
           <label><input type="submit" value="Показать"></label>
         </form>
-        <form>
-          <fieldset>
-            <span>Сортировать</span>
-              <label>По цене<input type="checkbox" name="" value=""></label>
-              <label>По типу<input type="checkbox" name="" value=""></label>
-              <label>По названию<input type="submit" value=""><input type="submit" value=""></label>
-          </fieldset>
-          <section>
+        <div>
+            <p>Сортировать</p>
+            <ul>
+              <li><label><input type="button" value="По цене"></label></li>
+              <li><label><input type="button" value="По типу"></label></li>
+              <li><label>По названию<input type="button" value="&#8595"><input type="button" value="&#8593"></label></li>
+            </ul>
+        </div>
+        <section>
             <h2>Товары</h2>
             <ul>
               <li>
-                <img src="" width="300" height="146" alt="Картинка 1">
-                <h2>Название 1</h2></li>
-                <a href="">
-                  <span>Описание</span>
+                <article>
+                  <a href="">
+                    <img src="" width="300" height="146" alt="Картинка товара">
                   </a>
-                <a href=""><p>9900</p></a>
+                  <div>
+                    <h3><a href="">Название товара</a></h3>
+                    <p>Описание</p>
+                    <a href="">Цена</a>
+                  </div>
+                </article>
               </li>
               <li>
-                <img src="" width="300" height="146" alt="Картинка 2">
-                <h2>Название 2</h2>
-                <a href="">
-                  <span>Описание</span>
-                </a>
-                <a href=""><p>9900</p></a>
+                <article>
+                  <a href="">
+                    <img src="" width="300" height="146" alt="Картинка товара">
+                  </a>
+                  <div>
+                    <h3><a href="">Название товара</a></h3>
+                    <p>Описание</p>
+                    <a href="">Цена</a>
+                  </div>
+                </article>
               </li>
               <li>
-                <img src="" width="300" height="146" alt="Картинка 3">
-                <h2>Название 3</h2></li>
-                <a href="">
-                  <span>Описание</span>
-                </a>
-                <a href=""><p>9900</p></a>
+                <article>
+                  <a href="">
+                    <img src="" width="300" height="146" alt="Картинка товара">
+                  </a>
+                  <div>
+                    <h3><a href="">Название товара</a></h3>
+                    <p>Описание</p>
+                    <a href="">Цена</a>
+                  </div>
+                </article>
               </li>
               <li>
-                <img src="" width="300" height="146" alt="Картинка 4">
-                <h2>Название 4</h2></li>
-                <a href="">
-                  <span>Описание</span>
-                </a>
-                <a href=""><p>9900</p></a>
+                <article>
+                  <a href="">
+                    <img src="" width="300" height="146" alt="Картинка товара">
+                  </a>
+                  <div>
+                    <h3><a href="">Название товара</a></h3>
+                      <p>Описание</p>
+                      <a href="">Цена</a>
+                  </div>
+                </article>
               </li>
               <li>
-                <img src="" width="300" height="146" alt="Картинка 5">
-                <h2>Название 5</h2></li>
-                <a href="">
-                  <span>Описание</span>
-                </a>
-                <a href=""><p>9900</p></a>
+                <article>
+                  <a href="">
+                    <img src="" width="300" height="146" alt="Картинка товара">
+                  </a>
+                  <div>
+                    <h3><a href="">Название товара</a></h3>
+                      <p>Описание</p>
+                      <a href="">Цена</a>
+                  </div>
+                </article>
               </li>
               <li>
-                <img src="" width="300" height="146" alt="Картинка 6">
-                <h2>Название 6</h2></li>
-                <a href="">
-                  <span>Описание</span>
-                </a>
-                <a href=""><p>9900</p></a>
+                <article>
+                  <a href="">
+                    <img src="" width="300" height="146" alt="Картинка товара">
+                  </a>
+                  <div>
+                    <h3><a href="">Название товара</a></h3>
+                    <p>Описание</p>
+                    <a href="">Цена</a>
+                  </div>
+                </article>
               </li>
           </section> 
           <div>
@@ -133,8 +155,7 @@
                 <a href="#">Следующая</a>
               </li>
             </ul>
-          </div>
-        </form>
+        </div>
       </section>
       <section>
         <h2>Контакты</h2>
@@ -147,7 +168,7 @@
         <a href="">
           <img src="img/map 1.png" width="1140" height="416" alt="Map">
         </a>
-      </section> 
+      </div> 
     </main>
     <footer>
       <section>
