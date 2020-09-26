@@ -1,57 +1,190 @@
-:root {
-    --basic-black: #000000;
-    --basic-extra-dark: #242424;
-    --basic-dark: #aba9a7;
-    --basic-neutral: #e5e5e5;
-    --basic-extra-light: #f8f5f2;
-    --basic-white: #ffffff;
-  
-    --special: #663d15;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+.main-header {
+  background: #EEEEEE;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+.site-navigation li {
+  font-size: 16px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  line-height: 30px;
+}
 
-  .product-photo-preview {
-    list-style: none;
-  }
+.cart-link {
+  font-size: 16px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  line-height: 30px; 
+}
 
-  .footer-contacts a {
-    color: var(--basic-white);
-    text-decoration: underline;
-  }
-  
-  .footer-contacts a:hover,
-  .footer-contacts a:focus {
-    text-decoration: none;
-  }
-  
-  .footer-social {
-    text-align: center;
-  }
-  
-  .footer-social ul {
-    list-style: none;
-  }
-  
-  .footer-social h2 {
-    font-size: 14px;
-  
-  }
-  
-  /* Social button */
-  
-  .social-button {
-    color: inherit;
-  }
-  
-  .social-button:hover,
-  .social-button:focus {
-    background-color: var(--basic-white);
-  }
+.advantages {
+  background: #EEEEEE;
+}
+
+.advantages-title {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  line-height: 55px;
+}
+
+.advantages-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button_advantages-button{
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #FB565A;
+  border-radius: 3px;
+}
+
+.features-title-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+
+.features-item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button_features-WebSites {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #FB565A;
+}
+
+.button_features-Apps {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #FB565A;
+  border-radius: 3px;
+}
+
+.button_features-Presentation {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #EFC849;
+  border-radius: 3px;
+}
+
+.about-text_large {
+  font-family: "Roboto";
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about-text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-title {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about-item {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px; 
+}
+
+.capability-title {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.capability-value {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.capability-text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts-card {
+  background: #FFFFFF;
+}
+
+.contacts-card h3 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts-card address {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts-card p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts-card button {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 18px;
+  background: #FB565A;
+  border-radius: 3px;
+}
+
+.footer-discount-heading {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-discount-description {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.visually-hidden {
+display: none;
+}
