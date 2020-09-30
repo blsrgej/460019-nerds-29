@@ -1,5 +1,29 @@
+:root {
+  --main-header-bg-color: #EEEEEE;
+  --page-body-bg-color: #FFFFFF;
+  --advantage-bg-color: #EEEEEE;
+  --advantages-button-color: #FFFFFF;
+  --advantages-button-bg-color: #FB565A;
+  --features-button-WebSites-color: #FFFFFF;
+  --features-button-WebSites-bg-color: #FB565A;
+  --features-button-Apps-color: #FFFFFF;
+  --features-button-Apps-bg-color: #00CA74;
+  --features-button-Presentation-color: #FFFFFF;
+  --features-button-Presentation-bg-color: #EFC849;
+  --contacts-card-bg-color: #FFFFFF;
+  --contacts-card-button-bg-color:#FB565A;
+  --contacts-card-color: #666666;
+  --footer-discount-description-color:#444444;
+}
+.page-body {
+  background-color: var(--page-body-bg-color);
+  width: 1440px;
+  height: 545px;
+  left: 0px;
+  top: 0px;
+}
 .main-header {
-  background: #EEEEEE;
+  background: var(--main-header-bg-color);
 }
 
 .site-navigation li {
@@ -16,8 +40,16 @@
   line-height: 30px; 
 }
 
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
 .advantages {
-  background: #EEEEEE;
+  background: var(--advantage-bg-color);
 }
 
 .advantages-title {
@@ -30,17 +62,14 @@
 }
 
 .advantages-text {
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 24px;
 }
 
-.button_advantages-button{
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Roboto";
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #FB565A;
+.advantages-button{
+  color: var(--advantages-button-color);
+  background: var(--advantages-button-bg-color);
   border-radius: 3px;
 }
 
@@ -52,43 +81,32 @@
 }
 
 .features-item p {
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 24px;
 }
 
-.button_features-WebSites {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Roboto";
-  text-transform: uppercase;
+.features-button-WebSites {
   font-weight: bold;
-  color: #FFFFFF;
-  background: #FB565A;
+  color: var(--features-button-WebSites-color);
+  background: var(--features-button-WebSites-bg-color);
 }
 
-.button_features-Apps {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Roboto";
-  text-transform: uppercase;
+.features-button-Apps {
   font-weight: bold;
-  color: #FFFFFF;
-  background: #FB565A;
+  color: var(--features-button-Apps-color);
+  background: var(--features-button-Apps-bg-color);
   border-radius: 3px;
 }
 
-.button_features-Presentation {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Roboto";
-  text-transform: uppercase;
+.features-button-Presentation {
   font-weight: bold;
-  color: #FFFFFF;
-  background: #EFC849;
+  color: var(--features-button-Presentation-color);
+  background: var(--features-button-Presentation-bg-color);
   border-radius: 3px;
 }
 
-.about-text_large {
+.about-text-large {
   font-family: "Roboto";
   font-size: 45px;
   line-height: 45px;
@@ -137,7 +155,7 @@
 }
 
 .contacts-card {
-  background: #FFFFFF;
+  background: var(--contacts-card-bg-color);
 }
 
 .contacts-card h3 {
@@ -152,7 +170,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #666666;
+  color: var(--contacts-card-color);
 }
 
 .contacts-card p {
@@ -160,14 +178,11 @@
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #666666;
+  color: var(--contacts-card-color);
 }
 
 .contacts-card button {
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 18px;
-  background: #FB565A;
+  background: var(--contacts-card-button-bg-color);
   border-radius: 3px;
 }
 
@@ -182,7 +197,7 @@
   font-family: "Roboto";
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: var(--footer-discount-description-color);
 }
 
 .visually-hidden {
