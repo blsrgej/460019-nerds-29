@@ -7,19 +7,34 @@
   --basic-grey: #666666;
   --basic-dark:#444444;
   --basic-black: #000000;
-}
-.page-body {
-  background-color: var(--basic-white);
-  min-width: 1440px;
-  left: 0px;
-  top: 0px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  --basic-blue: #283136;
+  --inner-radio-background-color: #4D4D4D;
 }
 
-a { 
-  text-decoration: none;
- } 
+/* Global */
+
+.page-body {
+  background-color: var(--basic-white);
+  min-width: 1157px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: var(--basic-white);
+  border:none;
+}
+/* Main navigation */
+
 .main-header {
   background: var(--basic-supers-silver);
 }
@@ -30,48 +45,39 @@ a {
 
 .site-navigation li {
   text-transform: uppercase;
-  font-weight: medium;
   line-height: 30px;
 }
 
 .main-navigation a {
   color: var(--basic-black);
+  text-decoration: none;
 }
 
 .cart-link {
   text-transform: uppercase;
   line-height: 30px; 
-  font-weight: medium;
-}
-
-.button {
-  font: inherit;
-  text-align: center;
-  line-height: 18px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  color: var(--basic-white);
-  border:none;
 }
 
 .advantages {
   background-color: var(--basic-supers-silver);
 }
 
+.advantages-slide a {
+  text-decoration: none;
+}
+
 .advantages-title {
   font-size: 55px;
   line-height: 55px;
-  font-weight: medium;
 }
 
 .advantages-text {
   line-height: 24px;
+  font-weight: 400;
 }
 
 .advantages-button{
-  background: var(--basic-red);
-  border-radius: 3px;
-  font-weight: medium;
+  background-color: var(--basic-red);
 }
 
 .features-list {
@@ -80,67 +86,80 @@ a {
 
 .features-item a {
   color: var(--basic-white);
+  text-decoration: none;
 }
 
 .features-item-title a {
   color: var(--basic-black);
+  text-decoration: none;
 }
 
 .features-title-link {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .features-item p {
   line-height: 24px;
-  font-weight: medium;
-}
-
-.features-item-link {
-  font-weight: bold;
+  font-weight: 400;
+  color: var(--basic-blue);
 }
 
 .features-button-websites {
-  background: var(--basic-red);
-  border-radius: 3px;
+  background-color: var(--basic-red);
 }
 
 .features-button-apps {
-  background: var(--basic-green);
-  border-radius: 3px;
+  background-color: var(--basic-green);
 }
 
 .features-button-presentation {
-  background: var(--basic-yellow);
-  border-radius: 3px;
+  background-color: var(--basic-yellow);
 }
 
 .about-text-large {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
-  font-weight: medium;
 }
 
 .about-text {
+  font-weight: 400;
   line-height: 24px;
+  color: var(--basic-blue);
 }
 
 .about-title {
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
+  color: var(--basic-blue);
 }
 
+.about-list {
+  list-style: none;
+  color: var(--basic-blue);
+}
+
+/*li.about-item::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  
+	background-color: var(--basic-red);
+}*/
+
 .about-item {
-  line-height: 24px; 
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .capability-title {
-  font-weight: bold;
-  text-transform: uppercase;
   line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .capability-list {
@@ -148,13 +167,15 @@ a {
 }
 
 .capability-value {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 45px;
   line-height: 64px;
 }
 
 .capability-text {
+  font-weight: 400;
   line-height: 18px;
+  color: var(--basic-blue);
 }
 
 .contacts-card {
@@ -162,17 +183,22 @@ a {
 }
 
 .contacts-card h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .contacts-card address,
 .contacts-card p,
 .contacts-card a {
+  font-weight: 400;
   font-style: normal;
-  line-height: 18px;
   color: var(--basic-grey);
+}
+
+.contacts-card a {
+  text-decoration: none;
 }
 
 .contacts-card button {
@@ -181,12 +207,13 @@ a {
 }
 
 .footer-discount-heading {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
 }
 
 .footer-discount-description {
+  font-weight: 400;
   line-height: 22px;
   color: var(--basic-dark);
 }
@@ -202,4 +229,111 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Inner */
+
+.inner-title {
+  font-size: 55px;
+  line-height: 55px;
+  background-color: var(--basic-supers-silver);
+}
+
+.filter fieldset{
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-rate label{
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+}
+
+.filter-input-text {
+  width: 80px;
+  height: 38px;
+  text-align: center;
+  background-color: var(--basic-supers-silver);
+  border: none;
+  border-radius: 3px;
+  color: var(--basic-blue);
+}
+
+.filter-sort span,
+.filter-features span {
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--basic-blue);
+}
+
+.filter-button {
+  width: 260px;
+  height: 50px;
+  color: var(--basic-black);
+  background-color: var(--basic-supers-silver);
+}
+
+.sort h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-item .select-button {
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+.products-list {
+  list-style: none;
+}
+
+.products-item a {
+  text-decoration: none;
+}
+
+.products-information-title a {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.products-information p {
+  font-weight: 400;
+}
+
+a.products-price {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+}
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: var(--basic-black);
+  text-decoration: none;
 }
